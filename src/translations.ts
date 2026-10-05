@@ -75,7 +75,6 @@ export const translations = {
           { label: "Fallback Chain", value: "5-Tier Models" },
           { label: "Cloud Dependency", value: "0% in Local Mode" },
         ],
-        caseStudyUrl: "/projects/grademyjob",
         externalUrl: "https://grademyjob.pages.dev",
       }
     ] as ProjectSlide[],
@@ -150,7 +149,6 @@ export const translations = {
           { label: "Hata Toleransı", value: "5 Kademeli Model" },
           { label: "Bulut Bağımlılığı", value: "Lokal Modda %0" },
         ],
-        caseStudyUrl: "/projects/grademyjob",
         externalUrl: "https://grademyjob.pages.dev",
       }
     ] as ProjectSlide[],
