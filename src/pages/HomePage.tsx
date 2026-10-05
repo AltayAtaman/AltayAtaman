@@ -440,27 +440,27 @@ export default function HomePage({ lang, toggleLang }: HomePageProps) {
 
                   {/* Action Bar */}
                   <div className="pt-2 flex flex-wrap items-center gap-4">
-                    {project.externalUrl ? (
-                      <a
-                        href={project.externalUrl}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-amber-500 hover:bg-amber-400 text-zinc-950 font-semibold text-sm transition-all shadow-lg shadow-amber-500/20 hover:shadow-amber-500/30"
-                      >
-                        <Sparkles className="w-4 h-4" />
-                        <span>{t.projects.viewCaseStudy}</span>
-                        <ExternalLink className="w-4 h-4" />
-                      </a>
-                    ) : project.caseStudyUrl ? (
+                    {project.caseStudyUrl && (
                       <Link
                         to={project.caseStudyUrl}
                         className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-amber-500 hover:bg-amber-400 text-zinc-950 font-semibold text-sm transition-all shadow-lg shadow-amber-500/20 hover:shadow-amber-500/30"
                       >
                         <Sparkles className="w-4 h-4" />
-                        <span>{t.projects.viewCaseStudy}</span>
+                        <span>{lang === 'tr' ? `${project.title}'a Git` : `Visit ${project.title}`}</span>
                         <ArrowRight className="w-4 h-4" />
                       </Link>
-                    ) : null}
+                    )}
+                    {project.externalUrl && (
+                      <a
+                        href={project.externalUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-zinc-900 hover:bg-zinc-800 border border-zinc-700/80 text-white font-medium text-sm transition-all hover:border-zinc-600 shadow-md"
+                      >
+                        <ExternalLink className="w-4 h-4 text-amber-400" />
+                        <span>{lang === 'tr' ? 'Canlı Site' : 'Live Site'}</span>
+                      </a>
+                    )}
                   </div>
 
                 </div>
