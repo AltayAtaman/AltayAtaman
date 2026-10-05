@@ -60,7 +60,6 @@ export const translations = {
           { label: "Cloud Dependency", value: "0% Required" },
           { label: "Architecture", value: "Master-Replica Edge" },
         ],
-        caseStudyUrl: "/projects/yiy-io",
         externalUrl: "https://yiy-io.pages.dev",
       },
       {
@@ -134,7 +133,6 @@ export const translations = {
           { label: "Bulut Bağımlılığı", value: "%0 Zorunlu" },
           { label: "Mimari", value: "Master-Replica Edge" },
         ],
-        caseStudyUrl: "/projects/yiy-io",
         externalUrl: "https://yiy-io.pages.dev",
       },
       {
