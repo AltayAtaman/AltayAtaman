@@ -1,8 +1,7 @@
 import { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
-import { Spotlight } from '@/components/ui/spotlight';
-import { cn } from '@/lib/utils';
+import NetworkBackground from '../components/NetworkBackground';
 import { 
   Mail, 
   Terminal, 
@@ -169,28 +168,10 @@ export default function HomePage({ lang, toggleLang }: HomePageProps) {
   };
 
   return (
-    <div className="relative h-screen w-screen overflow-hidden bg-[#0a0c10] text-zinc-200 font-sans selection:bg-amber-500/25 selection:text-amber-200 antialiased">
+    <div className="relative h-screen w-screen overflow-hidden bg-[#0d0f12] text-zinc-200 font-sans selection:bg-amber-500/25 selection:text-amber-200">
       
-      {/* Precision CAD Blueprint Grid Background */}
-      <div
-        className={cn(
-          "pointer-events-none absolute inset-0 [background-size:40px_40px] select-none z-0",
-          "[background-image:linear-gradient(to_right,#171b22_1px,transparent_1px),linear-gradient(to_bottom,#171b22_1px,transparent_1px)]",
-          "[mask-image:radial-gradient(ellipse_80%_60%_at_50%_40%,#000_70%,transparent_100%)]"
-        )}
-      />
-
-      {/* Primary White Spotlight (Top-Left Focal Illumination) */}
-      <Spotlight
-        className="-top-40 left-0 md:-top-20 md:left-60"
-        fill="white"
-      />
-
-      {/* Secondary Subtle Amber Accent Spotlight (Edge Hardware Glow) */}
-      <Spotlight
-        className="-top-20 right-0 md:top-10 md:-right-20 opacity-[0.05]"
-        fill="#f59e0b"
-      />
+      {/* Interactive IoT Constellation Network Background */}
+      <NetworkBackground />
 
       {/* Fixed Persistent Header */}
       <div className="fixed top-0 left-0 right-0 z-50">

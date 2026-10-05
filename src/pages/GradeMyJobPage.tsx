@@ -13,7 +13,6 @@ import {
   Lock, 
   Play, 
   Gauge, 
-  Bot, 
   Globe2, 
   Workflow 
 } from 'lucide-react';
@@ -82,19 +81,24 @@ export default function GradeMyJobPage({ lang, toggleLang, latency }: GradeMyJob
 
           <div className="flex items-center gap-2">
             <a 
+              href="https://grademyjob.pages.dev" 
+              target="_blank" 
+              rel="noreferrer" 
+              className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-cyan-500/10 border border-cyan-500/30 hover:bg-cyan-500/20 text-xs font-mono text-cyan-300 transition-colors"
+            >
+              <span>grademyjob.pages.dev</span>
+              <ExternalLink className="w-3 h-3 text-cyan-400" />
+            </a>
+            <a 
               href="https://github.com/AltayAtaman/JobDecode" 
               target="_blank" 
               rel="noreferrer" 
               className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-zinc-900 border border-zinc-800 hover:border-zinc-700 text-xs font-mono text-zinc-300 transition-colors"
             >
               <GithubIcon className="w-3.5 h-3.5 text-zinc-400" />
-              <span>GitHub Repo</span>
+              <span>GitHub</span>
               <ExternalLink className="w-3 h-3 text-zinc-500" />
             </a>
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-cyan-500/10 border border-cyan-500/30 text-xs font-mono text-cyan-300">
-              <Bot className="w-3.5 h-3.5 text-cyan-400" />
-              <span>Client-Side AI & Serverless</span>
-            </div>
           </div>
         </div>
 
@@ -136,21 +140,31 @@ export default function GradeMyJobPage({ lang, toggleLang, latency }: GradeMyJob
               {/* Action Buttons */}
               <div className="flex flex-wrap items-center gap-4 pt-2">
                 <a 
-                  href="https://github.com/AltayAtaman/JobDecode" 
+                  href="https://grademyjob.pages.dev" 
                   target="_blank" 
                   rel="noreferrer"
                   className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-zinc-950 font-semibold text-xs sm:text-sm transition-all shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/30"
                 >
-                  <GithubIcon className="w-4 h-4" />
-                  <span>{isTr ? 'Kaynak Kodunu İncele' : 'View Source on GitHub'}</span>
+                  <ExternalLink className="w-4 h-4" />
+                  <span>{isTr ? 'Canlı Siteyi Ziyaret Et' : 'Visit Live Site'}</span>
+                </a>
+
+                <a 
+                  href="https://github.com/AltayAtaman/JobDecode" 
+                  target="_blank" 
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-zinc-900 hover:bg-zinc-800 border border-zinc-700/80 text-white font-medium text-xs sm:text-sm transition-all"
+                >
+                  <GithubIcon className="w-4 h-4 text-zinc-400" />
+                  <span>{isTr ? 'Kaynak Kod (GitHub)' : 'GitHub Repo'}</span>
                 </a>
 
                 <a 
                   href="#mimari" 
-                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-zinc-900 hover:bg-zinc-800 border border-zinc-700/80 text-white font-medium text-xs sm:text-sm transition-all"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-zinc-900/60 hover:bg-zinc-800 border border-zinc-800 text-zinc-300 hover:text-white font-medium text-xs sm:text-sm transition-all"
                 >
                   <Terminal className="w-4 h-4 text-cyan-400" />
-                  <span>{isTr ? 'Sistem Mimarisi' : 'System Architecture'}</span>
+                  <span>{isTr ? 'Sistem Mimarisi' : 'Architecture'}</span>
                 </a>
               </div>
 

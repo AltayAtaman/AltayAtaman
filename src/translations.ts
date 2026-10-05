@@ -76,7 +76,7 @@ export const translations = {
           { label: "Cloud Dependency", value: "0% in Local Mode" },
         ],
         caseStudyUrl: "/projects/grademyjob",
-        externalUrl: "https://github.com/AltayAtaman/JobDecode",
+        externalUrl: "https://grademyjob.pages.dev",
       }
     ] as ProjectSlide[],
     contact: {
@@ -151,7 +151,7 @@ export const translations = {
           { label: "Bulut Bağımlılığı", value: "Lokal Modda %0" },
         ],
         caseStudyUrl: "/projects/grademyjob",
-        externalUrl: "https://github.com/AltayAtaman/JobDecode",
+        externalUrl: "https://grademyjob.pages.dev",
       }
     ] as ProjectSlide[],
     contact: {
