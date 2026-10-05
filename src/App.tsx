@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import YiyIoPage from './pages/YiyIoPage';
+import GradeMyJobPage from './pages/GradeMyJobPage';
 import { Language } from './translations';
 
 function ScrollToTop() {
@@ -49,6 +50,14 @@ export default function App() {
         <Route 
           path="/yiy-io" 
           element={<YiyIoPage lang={lang} toggleLang={toggleLang} latency={latency} />} 
+        />
+        <Route 
+          path="/projects/grademyjob" 
+          element={<GradeMyJobPage lang={lang} toggleLang={toggleLang} latency={latency} />} 
+        />
+        <Route 
+          path="/grademyjob" 
+          element={<GradeMyJobPage lang={lang} toggleLang={toggleLang} latency={latency} />} 
         />
         <Route 
           path="*" 

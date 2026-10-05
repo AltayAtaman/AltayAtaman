@@ -62,6 +62,21 @@ export const translations = {
         ],
         caseStudyUrl: "/projects/yiy-io",
         externalUrl: "https://yiy-io.pages.dev",
+      },
+      {
+        id: "grademyjob",
+        tag: "Distributed Client-Side AI & Serverless Full-Stack Platform",
+        title: "GradeMyJob",
+        subtitle: "Sub-Second Edge Triage & Serverless AI Job Analysis",
+        description: "Eliminates job-hunt fatigue by extracting technical stacks, categorizing hard vs. preferred qualifications, and scoring candidate-role fit in real time. Unifies an offline-first browser extension with a local micro-decision engine (FastAPI/Laya) and a fault-tolerant AWS Serverless backend with atomic quota management.",
+        tech: ["TypeScript", "React 18", "Python 3", "FastAPI", "AWS DynamoDB", "AWS Lambda", "WXT Extension", "Tailwind CSS"],
+        metrics: [
+          { label: "Edge Inference", value: "~50–70ms" },
+          { label: "Fallback Chain", value: "5-Tier Models" },
+          { label: "Cloud Dependency", value: "0% in Local Mode" },
+        ],
+        caseStudyUrl: "/projects/grademyjob",
+        externalUrl: "https://github.com/AltayAtaman/JobDecode",
       }
     ] as ProjectSlide[],
     contact: {
@@ -122,6 +137,21 @@ export const translations = {
         ],
         caseStudyUrl: "/projects/yiy-io",
         externalUrl: "https://yiy-io.pages.dev",
+      },
+      {
+        id: "grademyjob",
+        tag: "Dağıtık İstemci Taraflı YZ & Sunucusuz Platform",
+        title: "GradeMyJob",
+        subtitle: "Edge ve Sunucusuz Yapay Zekâ ile Anlık İş İlanı Analitiği",
+        description: "LinkedIn ve Indeed gibi platformlardaki iş ilanlarını gerçek zamanlı ayrıştırıp teknik yığınları, zorunlu kriterleri ve kurumsal jargonu aday profiliyle eşleştiren bir tarayıcı eklentisidir. Lokal karar motoru (FastAPI/Laya) ve AWS sunucusuz mimarisiyle sıfır gecikmeli aday uyum puanlaması ve otomasyon sunar.",
+        tech: ["TypeScript", "React 18", "Python 3", "FastAPI", "AWS DynamoDB", "AWS Lambda", "WXT Extension", "Tailwind CSS"],
+        metrics: [
+          { label: "Edge Çıkarım", value: "~50–70ms" },
+          { label: "Hata Toleransı", value: "5 Kademeli Model" },
+          { label: "Bulut Bağımlılığı", value: "Lokal Modda %0" },
+        ],
+        caseStudyUrl: "/projects/grademyjob",
+        externalUrl: "https://github.com/AltayAtaman/JobDecode",
       }
     ] as ProjectSlide[],
     contact: {
