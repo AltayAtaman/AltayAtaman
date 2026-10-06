@@ -305,7 +305,7 @@ export default function HomePage({ lang, toggleLang }: HomePageProps) {
             {/* Action Row */}
             <div className="flex flex-wrap items-center gap-4 pt-2">
               <a 
-                href="/ismail_altay_ataman_cv.pdf" 
+                href={t.hero.cvFile} 
                 target="_blank" 
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-amber-500 hover:bg-amber-400 text-zinc-950 font-semibold text-sm transition-all shadow-lg shadow-amber-500/20 hover:shadow-amber-500/30"
