@@ -16,8 +16,12 @@ export default {
         'accent-subtle': 'rgba(245, 158, 11, 0.12)',
       },
       fontFamily: {
-        mono: ['JetBrains Mono', 'Menlo', 'monospace'],
-        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+        mono: ['JetBrains Mono', 'Menlo', 'SFMono-Regular', 'Consolas', 'monospace'],
+        sans: ['-apple-system', 'BlinkMacSystemFont', '"SF Pro Display"', '"SF Pro Text"', 'Inter', 'system-ui', 'sans-serif'],
+      },
+      transitionTimingFunction: {
+        'apple-spring': 'cubic-bezier(0.16, 1, 0.3, 1)',
+        'apple-press': 'cubic-bezier(0.2, 0, 0, 1)',
       },
       animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",

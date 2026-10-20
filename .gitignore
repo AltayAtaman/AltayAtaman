@@ -22,3 +22,10 @@ pnpm-debug.log*
 Thumbs.db
 .vscode/
 .idea/
+
+# Local Agent / AI Cache
+.agents/
+
+# Design concepts & redundant assets
+designs/
+resources/
