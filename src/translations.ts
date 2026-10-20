@@ -61,7 +61,7 @@ export const translations = {
           { label: "Cloud Dependency", value: "0% Required" },
           { label: "Architecture", value: "Master-Replica Edge" },
         ],
-        externalUrl: "https://yiy-io.pages.dev",
+        externalUrl: "https://AltayAtaman.github.io/yiy-io/",
       },
       {
         id: "grademyjob",
@@ -75,7 +75,7 @@ export const translations = {
           { label: "Fallback Chain", value: "5-Tier Models" },
           { label: "Cloud Dependency", value: "0% in Local Mode" },
         ],
-        externalUrl: "https://grademyjob.pages.dev",
+        externalUrl: "https://AltayAtaman.github.io/GradeMyJob/",
       }
     ] as ProjectSlide[],
     contact: {
@@ -135,7 +135,7 @@ export const translations = {
           { label: "Bulut Bağımlılığı", value: "%0 Zorunlu" },
           { label: "Mimari", value: "Master-Replica Edge" },
         ],
-        externalUrl: "https://yiy-io.pages.dev",
+        externalUrl: "https://AltayAtaman.github.io/yiy-io/",
       },
       {
         id: "grademyjob",
@@ -149,7 +149,7 @@ export const translations = {
           { label: "Hata Toleransı", value: "5 Kademeli Model" },
           { label: "Bulut Bağımlılığı", value: "Lokal Modda %0" },
         ],
-        externalUrl: "https://grademyjob.pages.dev",
+        externalUrl: "https://AltayAtaman.github.io/GradeMyJob/",
       }
     ] as ProjectSlide[],
     contact: {
